@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prism.JS</title>
+    <link rel="stylesheet" type="text/css" href="prism.css" />
+</head>
+
+<body>
+    <pre>
+    	<code class="language-html line-numbers">
+    		&lt;!-- if browser doesn&#039;t support JavaScript then use normal link tags to load CSS --&gt;
+&lt;noscript&gt;
+      &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;CSS HERE&quot;/&gt;
+&lt;/noscript&gt;
+
+&lt;!-- load main.css --&gt;
+&lt;script&gt;
+(function() {
+    var cssMain = document.createElement(&#039;link&#039;);
+    cssMain.href = &#039;CSS HERE&#039;;
+    cssMain.rel = &#039;stylesheet&#039;;
+    cssMain.type = &#039;text/css&#039;;
+    document.getElementsByTagName(&#039;head&#039;)[0].appendChild(cssMain);
+})();
+&lt;/script&gt;
+    	</code>
+    </pre>
+    <script type="text/javascript" src="prism.js"></script>
+</body>
+
+</html>
