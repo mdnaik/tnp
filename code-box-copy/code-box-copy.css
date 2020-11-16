@@ -29,7 +29,7 @@
     vertical-align: middle;
     width: 16px;
     height: 16px;
-    background: url(ic-copy.svg) no-repeat 0 0;
+    background: url(https://cdn.jsdelivr.net/gh/mdnaik/tnp/code-box-copy/ic-copy.svg) no-repeat 0 0;
 }
 
 .code-box-copy:hover .code-box-copy__btn {
